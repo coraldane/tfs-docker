@@ -19,9 +19,6 @@ yum -y install mysql.x86_64 mysql-devel.x86_64
 yum -y install libunwind-devel
 yum -y install gperftools
 
-cd /mnt
-tar -zxvf tb-common-utils.tar.gz && rm -rf tb-common-utils.tar.gz
-tar -zxvf tfs-release-2.2.16.tar.gz && rm -rf tfs-release-2.2.16.tar.gz
 
 echo export TBLIB_ROOT=/opt/tblib >> /root/.bash_profile
 source /root/.bash_profile
@@ -32,6 +29,6 @@ sh build.sh
 cd /mnt/tfs-release-2.2.16
 sh build.sh init
 #./configure --prefix=/opt/tfs --with-release --without-tcmalloc
-./configure --prefix=/root/tfs_bin --with-release -Wno-deprecated
+./configure --prefix=/root/tfs_bin --with-release --with-gnu-ld CFLAGS=-fpermissive CPPFLAGS=-fpermissive
 
 make && make install
