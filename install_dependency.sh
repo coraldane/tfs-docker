@@ -7,6 +7,7 @@ mv /mnt/CentOS.repo /etc/yum.repos.d/
 rpm -ivh /mnt/epel-release-6-8.noarch.rpm
 
 yum -y install make automake autoconf file
+yum -y install libuuid-devel
 yum -y install tar
 yum -y install gcc gcc-c++
 yum -y install e2fsprogs-devel.x86_64
