@@ -42,4 +42,4 @@ sh build.sh init
 
 make && make install
 
-cp -r /mnt/tfs-release-2.2.0/conf/* /root/tfs_bin/conf/
+cp -r /mnt/tfs-release-2.2.0/conf/*.conf /root/tfs_bin/conf/
