@@ -16,8 +16,8 @@ yum -y install ncurses.x86_64
 yum -y install ncurses-devel.x86_64
 yum -y install mysql.x86_64 mysql-devel.x86_64
 
-yum -y install libunwind-devel
-yum -y install gperftools
+#yum -y install libunwind-devel
+#yum -y install gperftools
 
 
 echo export TBLIB_ROOT=/opt/tblib >> /root/.bash_profile
@@ -28,7 +28,7 @@ sh build.sh
 
 cd /mnt/tfs-release-2.2.16
 sh build.sh init
-#./configure --prefix=/opt/tfs --with-release --without-tcmalloc
-./configure --prefix=/root/tfs_bin --with-release --with-gnu-ld CFLAGS=-fpermissive CPPFLAGS=-fpermissive
+./configure --prefix=/root/tfs_bin --with-release --without-tcmalloc
+#./configure --prefix=/root/tfs_bin --with-release --with-gnu-ld CFLAGS=-fpermissive CPPFLAGS=-fpermissive
 
 make && make install
