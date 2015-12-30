@@ -2,7 +2,7 @@
 
 cd /etc/yum.repos.d/
 rm -rf CentOS*
-mv /mnt/CentOS.repo /etc/yum.repos.d/
+mv /mnt/*.repo /etc/yum.repos.d/
 
 rpm -ivh /mnt/epel-release-6-8.noarch.rpm
 
@@ -16,10 +16,10 @@ yum -y install zlib-devel.x86_64
 yum -y install readline-devel
 yum -y install ncurses.x86_64
 yum -y install ncurses-devel.x86_64
-yum -y install libunwind-devel
-yum -y install gperftools
 yum -y install mysql.x86_64 mysql-devel.x86_64
 
+yum -y install libunwind-devel
+yum -y install gperftools
 
 cd /mnt
 tar -zxvf tb-common-utils.tar.gz && rm -rf tb-common-utils.tar.gz
