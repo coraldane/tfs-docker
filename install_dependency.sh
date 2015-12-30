@@ -15,7 +15,7 @@ yum -y install readline-devel
 yum -y install ncurses.x86_64
 yum -y install ncurses-devel.x86_64
 yum -y install mysql.x86_64 mysql-devel.x86_64
-
+yum -y install jemalloc
 #yum -y install libunwind-devel
 #yum -y install gperftools
 
