@@ -4,8 +4,6 @@ cd /etc/yum.repos.d/
 rm -rf CentOS*
 mv /mnt/*.repo /etc/yum.repos.d/
 
-rpm -ivh /mnt/epel-release-6-8.noarch.rpm
-
 yum -y install make automake autoconf file
 yum -y install libuuid-devel
 yum -y install tar
@@ -34,6 +32,6 @@ sh build.sh
 cd /mnt/tfs-release-2.2.16
 sh build.sh init
 #./configure --prefix=/opt/tfs --with-release --without-tcmalloc
-./configure --prefix=/root/tfs_bin --with-release
+./configure --prefix=/root/tfs_bin --with-release -Wno-deprecated
 
 make && make install
