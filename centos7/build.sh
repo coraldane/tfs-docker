@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t tfs:2.2.16 .
+docker build -t tfs:2.2.0 .
