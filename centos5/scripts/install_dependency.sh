@@ -2,7 +2,7 @@
 
 cd /etc/yum.repos.d/
 rm -rf *
-cat /mnt/CentOS.repo > /etc/yum.repos.d/CentOS.repo
+cat /root/CentOS.repo > /etc/yum.repos.d/CentOS.repo
 
 yum -y install make automake autoconf file
 yum -y install gcc-c++
