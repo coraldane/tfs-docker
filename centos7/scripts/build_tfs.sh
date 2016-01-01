@@ -12,8 +12,7 @@ sh build.sh
 
 cd /mnt/tfs-release-2.2.0
 sh build.sh init
-#./configure --prefix=/opt/tfs --with-release --without-tcmalloc
-./configure --prefix=/opt/tfs --with-release
+./configure --prefix=/opt/tfs --with-release --without-tcmalloc
 
 make && make install
 
