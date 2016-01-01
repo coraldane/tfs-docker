@@ -10,8 +10,8 @@ source /root/.bash_profile
 
 cd /mnt/tfs-release-2.2.0
 sh build.sh init
-#./configure --prefix=/usr/local/tfs --with-release --without-tcmalloc
 ./configure --prefix=/usr/local/tfs --with-release
 make && make install
 
+mkdir /usr/local/tfs/conf
 cp -r /mnt/tfs-release-2.2.0/conf/*.conf /usr/local/tfs/conf/
