@@ -17,10 +17,10 @@ source /root/.bash_profile
 cd /mnt/tb-common-utils
 sh build.sh
 
-cd /mnt/tfs-release-2.2.16
+cd /mnt/tfs-release-2.2.0
 sh build.sh init
-./configure --prefix=/opt/tfs --with-release --without-tcmalloc
-
+#./configure --prefix=/usr/local/tfs --with-release --without-tcmalloc
+./configure --prefix=/usr/local/tfs --with-release
 make && make install
 
-cp -r /mnt/tfs-release-2.2.0/conf/*.conf /root/tfs_bin/conf/
+cp -r /mnt/tfs-release-2.2.0/conf/*.conf /usr/local/tfs/conf/
