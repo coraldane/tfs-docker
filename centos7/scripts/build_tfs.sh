@@ -15,3 +15,8 @@ make && make install
 
 mkdir /usr/local/tfs/conf
 cp -r /mnt/tfs-latest/conf/*.conf /usr/local/tfs/conf/
+
+while true;
+do
+  sleep 10
+done
