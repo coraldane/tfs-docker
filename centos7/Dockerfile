@@ -5,7 +5,7 @@ COPY tars /mnt/
 COPY scripts /root/
 
 RUN bash /root/install_dependency.sh
-RUN bash /root/install_tfs.sh
+RUN bash /root/build_tfs.sh
 
 
 CMD /bin/bash
