@@ -1,0 +1,1 @@
+link ../packages/tfs.spec
