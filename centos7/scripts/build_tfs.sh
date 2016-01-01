@@ -13,5 +13,5 @@ sh build.sh init
 ./configure --prefix=/usr/local/tfs --with-release
 make && make install
 
-#mkdir /usr/local/tfs/conf
-#cp -r /mnt/tfs-latest/conf/*.conf /usr/local/tfs/conf/
+mkdir /usr/local/tfs/conf
+cp -r /mnt/tfs-latest/conf/*.conf /usr/local/tfs/conf/
