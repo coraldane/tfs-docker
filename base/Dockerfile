@@ -1,8 +1,11 @@
 FROM centos:7
 MAINTAINER coraldane coraldane@163.com
 
-COPY install_dependency.sh /root/install_dependency.sh
+COPY scripts /root/
+COPY tars /mnt/
 
-RUN bash /root/install_dependency.sh
+RUN bash /root/install_libs.sh
+RUN bash /root/build_tb_util.sh
+
 
 CMD /bin/bash

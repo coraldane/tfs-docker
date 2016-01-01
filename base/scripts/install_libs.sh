@@ -1,9 +1,5 @@
 #!/bin/bash
 
-#cd /etc/yum.repos.d/
-#rm -rf *
-#cat /root/CentOS.repo > /etc/yum.repos.d/CentOS.repo
-
 yum -y install make automake autoconf file
 yum -y install libtool
 yum -y install gcc
