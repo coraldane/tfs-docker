@@ -41,7 +41,8 @@ cd centos7 && sh build.sh
 ```
 构建成功后会出现tfs:latest的Docker镜像   
 
-本目录下默认提供一个编译好的二进制包：
+## releases
+默认提供一个编译好的二进制包：
 https://github.com/coraldane/tfs-docker/releases/download/2.2.16/tfs-centos7-amd64.tar.gz   
 在CentOS 7环境下成功运行    
 启动过程中如果出现缺少依赖包的情况，请自行安装     
