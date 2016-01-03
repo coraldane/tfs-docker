@@ -7,14 +7,6 @@ This is a project to build tfs binary package in docker
 笔者通过一段时间反复尝试，终于成功通过Docker的方式编译TFS且完成部署。  
 TFS建议在64位Linux环境下运行，32位环境暂未部署成功。   
 
-## base
-这个目录用于构建TFS的依赖镜像，包括tb-common-utils   
-
-使用方式，构建tfs/base镜像   
-```
-cd base && sh build.sh
-```
-构建成功后会出现tfs/base:1.0的Docker镜像   
 
 ## centos5
 由于淘宝内部使用的TFS 都运行在RHEL 5的机器上，GCC版本为4.1.2   
@@ -25,9 +17,18 @@ cd base && sh build.sh
 
 使用方式, 构建tfs:2.2.0的Docker镜像    
 ```
-cd base && sh build.sh
+cd centos5 && sh build.sh
 ```
 构建成功后会出现tfs:2.2.0的Docker镜像    
+
+## base
+这个目录用于构建TFS的依赖镜像，包括tb-common-utils   
+
+使用方式，构建tfs/base镜像   
+```
+cd base && sh build.sh
+```
+构建成功后会出现tfs/base:1.0的Docker镜像
 
 ## centos7
 基于 base 镜像构建，编译的源码为 https://github.com/alibaba/tfs 的最新版本，   
@@ -36,7 +37,7 @@ cd base && sh build.sh
 
 使用方式, 构建tfs:latest的Docker镜像   
 ```
-cd base && sh build.sh
+cd centos7 && sh build.sh
 ```
 构建成功后会出现tfs:latest的Docker镜像   
 
