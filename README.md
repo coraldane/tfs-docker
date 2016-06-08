@@ -48,3 +48,8 @@ https://github.com/coraldane/tfs-docker/releases/download/2.2.16/tfs-centos7-amd
 启动过程中如果出现缺少依赖包的情况，请自行安装     
 笔者将这个二进制包复制到新机器上运行，需要安装以下几个依赖：   
 yum -y install gperftools-devel.x86_64 readline-devel   
+
+## releases 2.2.16 more
+[tfs-centos7-amd64-more.tar.gz](https://github.com/hookszhang/tfs-docker/releases/download/2.2.16-more/tfs-centos7-amd64-more.tar.gz)
+
+增加编译了rc, rs, meta 模块，同样在CentOS 7环境下成功运行,依赖 mariadb-devel.x86_64
